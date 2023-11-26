@@ -28,8 +28,8 @@
 }
 \renewcommand{\maketitle}{%
 	\begin{center}
-	\noindent{\bf\Huge\@name}\vspace{0.5cm}\\{\sc\@desc}\vspace{0.5cm}\\{\it\@mailingaddr}\\{\@phone $\vert$ \@webpage}\vspace{0.25cm}\\%
-	\noindent\rule{5cm}{0.4pt}\vspace{0.75cm}\\
+		\noindent{\bf\Huge\@name}\vspace{0.5cm}\\{\sc\@desc}\\{\@webpage}\\%
+		\noindent\rule{5cm}{0.4pt}\vspace{0.75cm}\\
 	\end{center}
 }
 
@@ -47,5 +47,5 @@
 }
 
 \newenvironment{detail}[3][]{%
-    {{\bfseries#1}\addcontentsline{toc}{subsection}{#1}}\hfill#2 -- #3\\%
-\small}{\normalsize\noindent\vspace{0.5cm}\\}
+	{{\bfseries#1}\addcontentsline{toc}{subsection}{#1}}\hfill#2 -- #3\\%
+	\small}{\normalsize\noindent\vspace{0.5cm}\\}
